@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block body %}<h2>Delete post to {{post.destination}}?</h2><p>This action removes your post.</p><form method="post"><input type="hidden" name="csrf" value="{{csrf}}"><button name="confirm" value="yes">Confirm deletion</button><button name="confirm" value="no">Cancel</button></form>{% endblock %}

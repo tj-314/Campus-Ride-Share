@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block body %}<h2>{{post.post_type|title}} to {{post.destination}}</h2><p>{{post.travel_date}} at {{post.departure_time}}</p>{% if post.seats is not none %}<p>Available seats: {{post.seats}}</p>{% endif %}<p>Contact: {{post.contact}}</p><p>Arrange rides outside this application. No in-app reservations are provided.</p>{% endblock %}
